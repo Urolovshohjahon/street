@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+
     <title>Gamburger</title>
+
 </head>
 
 <body>
@@ -13,39 +15,39 @@
         <div class="header_nav">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    
-                        <a href="#!" class="logo">Street88</a>
-                    
-                    
-                        <ul class="flex-wrap">
-                            <li><a href="#!" class="active">Корзина <span>2</span></a></li>
-                            <li><a href="#!">Меню</a></li>
-                            <li><a href="#!">О нас</a></li>
-                            <li><a href="#!">Контакты</a></li>
-                        </ul>
-                    
+
+                    <a href="#!" class="logo">Street88</a>
+
+
+                    <ul class="flex-wrap">
+                        <li><a href="#!" class="active">Корзина <span>2</span></a></li>
+                        <li><a href="#!">Меню</a></li>
+                        <li><a href="#!">О нас</a></li>
+                        <li><a href="#!">Контакты</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>
         <div class="header_main">
             <div class="container">
                 <div class="row flex-column">
-                    
-                        <h1>Большой гамбургер</h1>
-                    
-                    
-                        <p class="p1">говядина</p>
-                    
-                    
-                        <p class="p2">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая
-                            котлета,
-                            сдобренная майонезом и кетчупом, - таков классический портрет гамбургера, наиболее
-                            распространенной «быстрой» еды в США, от отравления которой ежедневно на больничных койках
-                            оказываются десятки тысяч американцев</p>
-                    
-                    
-                        <div class="price">14500</div>
-                    
+
+                    <h1>Большой гамбургер</h1>
+
+
+                    <p class="p1">говядина</p>
+
+
+                    <p class="p2">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая
+                        котлета,
+                        сдобренная майонезом и кетчупом, - таков классический портрет гамбургера, наиболее
+                        распространенной «быстрой» еды в США, от отравления которой ежедневно на больничных койках
+                        оказываются десятки тысяч американцев</p>
+
+
+                    <div class="price result" value='14500'>14500</div>
+
                 </div>
             </div>
         </div>
@@ -54,23 +56,23 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <ul>
-                            <li><a href="#!">Гамбургеры</a></li>
-                            <li><a href="#!">Хот доги</a></li>
-                            <li><a href="#!">Пицца</a></li>
-                            <li><a href="#!">Напитки</a></li>
-                            <li><a href="#!">Соки</a></li>
-                        </ul>
-                    </div>
+
+                    <ul>
+                        <li><a href="#!">Гамбургеры</a></li>
+                        <li><a href="#!">Хот доги</a></li>
+                        <li><a href="#!">Пицца</a></li>
+                        <li><a href="#!">Напитки</a></li>
+                        <li><a href="#!">Соки</a></li>
+                    </ul>
+
                 </div>
-                <div class="row justify-content-around">
+                <div class="row ">
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./hambergur.jpg" alt="">
+                            <img src="./images/hambergur.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button class="btn" onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -80,9 +82,9 @@
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./limonad.jpg" alt="">
+                            <img src="./images/limonad.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -92,9 +94,9 @@
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./hot dog.jpg" alt="">
+                            <img src="./images/hot dog.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -104,9 +106,9 @@
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./pitsa.jpg" alt="">
+                            <img src="./images/pitsa.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -116,9 +118,9 @@
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./sharbat.jpg" alt="">
+                            <img src="./images/sharbat.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -128,9 +130,9 @@
                     <div class="col-burger">
 
                         <div class="section_img">
-                            <img src="./osh.jpg" alt="">
+                            <img src="./images/osh.jpg" alt="">
                             <div class="price">14500</div>
-                            <button>Добавить в корзину</button>
+                            <button onclick="adding('14500')">Добавить в корзину</button>
                         </div>
                         <h2>С говядиной</h2>
                         <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета,
@@ -189,24 +191,26 @@
                 <h3>+998 90 980 77 23</h3>
             </div>
             <div class="row justify-content-center">
-                
-                    
-                        <ul class="justify-content-between">
-                            <li><a href="#!">Меню</a></li>
-                            <li><a href="#!">О нас</a></li>
-                            <li><a href="#!">Контакты</a></li>
-                            <li><a href="#!">Instagram</a></li>
-                            <li><a href="#!">Facebook</a></li>
-                            <li><a href="#!">Telegram Bot</a></li>
-                        </ul>
-                    
-               
-            </div>   
+
+
+                <ul class="justify-content-between">
+                    <li><a href="#!">Меню</a></li>
+                    <li><a href="#!">О нас</a></li>
+                    <li><a href="#!">Контакты</a></li>
+                    <li><a href="#!">Instagram</a></li>
+                    <li><a href="#!">Facebook</a></li>
+                    <li><a href="#!">Telegram Bot</a></li>
+                </ul>
+
+
+            </div>
             <div class="row justify-content-center">
                 <p>Сайт разработан в целях обучения © PROWEB 2019</p>
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>

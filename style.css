@@ -83,7 +83,7 @@ body{
 
 header{
     
-    background:url('./headerbg_01_01.jpg') no-repeat center center/cover;
+    background:url('./images/headerbg_01_01.jpg') no-repeat center center/cover;
     width: 100%;
     min-height: 770px;
     margin: auto;
@@ -175,8 +175,10 @@ section{
 main ul{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     margin-top: 45px;
     margin-bottom: 65px;
+
 }
 main ul li{
   margin-right: 50px;
@@ -189,7 +191,7 @@ main ul li a{
 main .col-burger{
   max-width: 350px;
   margin: auto;
-  margin: 0px 10px;
+  
 }
 main ul li a:hover{
   color: var(--green);
@@ -255,7 +257,7 @@ main .section2{
   min-height: 560px;
   display: flex;
   margin: auto;
-  background: url('./imageee_02.jpg');
+  background: url('./images/imageee_02.jpg');
   padding:50px 0px 65px 0px;
 } 
 main .section2  h2{
@@ -345,7 +347,7 @@ footer  p{
 @media(min-width:1200px){
   .col-burger{
     max-width: 350px;
-    margin: 0px 10px;
+    
   }
 }
 @media(max-width:991px){
