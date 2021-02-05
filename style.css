@@ -194,6 +194,7 @@ main ul li a{
 main .col-burger{
   max-width: 350px;
   margin: auto;
+  margin-bottom:10px;
   
 }
 main ul li a:hover{
@@ -367,7 +368,7 @@ footer  p{
     margin-top: 75px;
 }
   main .col-burger{
-  max-width: 200px;
+  max-width: 250px;
   margin: auto;
   
 }
