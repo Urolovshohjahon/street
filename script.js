@@ -1,6 +1,6 @@
 let adding = (price) => {
     let value = document.querySelector('.result').innerHTML;
-    value = value + '+' + 500;
+    value = value + '+' + price;
     value = eval(value);
     document.querySelector('.result').innerHTML = value;
 }
