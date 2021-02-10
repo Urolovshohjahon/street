@@ -1,0 +1,25 @@
+form{
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(lime,rgb(3, 151, 3));
+
+}
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+input{
+    width: 400px;
+    height: 40px;
+}
+p{
+    font-size: 15px;
+    font-weight: 600;
+    color: blue;
+}

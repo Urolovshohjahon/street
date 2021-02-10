@@ -1,13 +1,26 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const mongoose = require('mongoose');
 const path = require('path');
-const server = http.createServer((req,res)=>{
-    fs.readFile("index.html",(err,data)=>{
-        if(err) console.log(err);
-        res.end(data);
-    });
-});
+const bodyParser = require('body-parser');
+const SignUpRouter = require('./routes/SignUp')
+const app = express();
 
-server.listen(3000,()=>{
-    console.log("ishladi...")
+mongoose.connect("mongodb://localhost/gamburger", { useUnifiedTopology: true, useNewUrlParser: true })
+    .then(() => {
+        console.log("Hammasi joyida...");
+    })
+    .catch((err) => {
+        console.log("Ulanib bo'lmadi...")
+    });
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use('/SignUp', SignUpRouter)
+app.use(express.static('public'));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index.html'))
 })
+
+
+
+app.listen(2000);
